@@ -1,0 +1,69 @@
+// * ------------------------------------------------------------
+// * BLOCK | List
+// *
+// * List variations
+// * ------------------------------------------------------------
+
+
+// -------------------------------------
+// Base
+// -------------------------------------
+
+    %b-list_base {
+        @extend %u-clearfix;
+
+        list-style: none;
+        margin-bottom: $box-model-margin;
+        padding: 0;
+    }
+
+// -------------------------------------
+// Float
+// -------------------------------------
+
+    %b-list_float {
+        @extend %b-list_base;
+
+        // Item
+
+        .b-list-item { float: left; }
+        .b-list-item + .b-list-item { margin-left: $box-model-spacing; }
+    }
+
+// -------------------------------------
+// Inverse
+// -------------------------------------
+
+    %b-list_inverse {
+        @extend %b-list_base;
+
+        text-align: right;
+
+        // Item
+
+        .b-list-item { display: inline-block; }
+        .b-list-item + .b-list-item { margin-left: $box-model-spacing; }
+    }
+
+// -------------------------------------
+// Center
+// -------------------------------------
+
+    %b-list_center {
+        @extend %b-list_base;
+
+        text-align: center;
+
+        // Item
+
+        .b-list-item { display: inline-block; }
+        .b-list-item + .b-list-item { margin-left: $box-model-spacing; }
+    }
+
+// -------------------------------------
+// Plain
+// -------------------------------------
+
+    %b-list_plain {
+        @extend %b-list_base;
+    }

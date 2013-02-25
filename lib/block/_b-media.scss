@@ -1,0 +1,65 @@
+// * ------------------------------------------------------------
+// * BLOCK | Media
+// *
+// * Presentation of media accompanied by content.
+// * ------------------------------------------------------------
+
+
+// -------------------------------------
+// Base
+// -------------------------------------
+
+%b-media_base {
+    @extend %u-clearfix;
+
+    clear: both;
+    margin-bottom: $baseline-em;
+
+    // -----------------------
+    // Content
+    // -----------------------
+
+    .b-media-content { overflow: hidden; } // Overflow: hidden prevent word wrapping -JB (12/18/12)
+}
+
+// -------------------------------------
+// Align Left
+// -------------------------------------
+
+%b-media_left {
+    @extend %b-media_base;
+
+    // -----------------------
+    // Media
+    // -----------------------
+
+    .b-media-asset { float: left; margin-right: 10px; }
+}
+
+// -------------------------------------
+// Align Right
+// -------------------------------------
+
+%b-media_right {
+    @extend %b-media_base;
+
+    // -----------------------
+    // Media
+    // -----------------------
+
+    .b-media-asset { float: right; margin-left: 10px; }
+}
+
+// -------------------------------------
+// Block
+// -------------------------------------
+
+%b-block {
+    @extend %b-media_base;
+
+    // -----------------------
+    // Media
+    // -----------------------
+
+    .b-media-asset { display: block; margin-bottom: $baseline-em; }
+}

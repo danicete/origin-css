@@ -1,0 +1,70 @@
+// * ------------------------------------------------------------
+// * BLOCK | Buttons
+// *
+// * Button design pattern
+// * ------------------------------------------------------------
+
+
+// -------------------------------------
+// Base
+// -------------------------------------
+
+%b-button_base {
+    background-color: $button-bg-color;
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(lighten($button-bg-color, 10%)), to($button-bg-color));
+    background-image: -webkit-linear-gradient(top, lighten($button-bg-color, 10%), $button-bg-color);
+    background-image: linear-gradient(to bottom, lighten($button-bg-color, 10%), $button-bg-color);
+    background-repeat: repeat-x;
+    border: 1px solid #BBB;
+    border-color: $button-bg-color $button-bg-color darken($button-bg-color, 10%);
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
+    color: $button-color;
+    cursor: pointer;
+    display: inline-block;
+    
+    
+    text-align: center;
+    vertical-align: middle;
+    
+    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+    -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+// -------------------------------------
+// Normal
+// -------------------------------------
+
+%b-button_normal {
+    @extend %b-button_base;
+
+    font-size: $button-font-size;
+    line-height: $baseline; 
+    padding: ($baseline-em / 2) $baseline-em;
+}
+
+// -------------------------------------
+// Small
+// -------------------------------------
+
+%b-button_small {
+    @extend %b-button_base;
+
+    font-size: $button-font-size * .75;
+    line-height: $baseline;
+    margin: ($baseline-em / 4) 0;
+    padding: ($baseline-em / 2);
+}
+
+// -------------------------------------
+// Large
+// -------------------------------------
+
+%b-button_large {
+    @extend %b-button_base;
+
+    font-size: $button-font-size * 2;
+    line-height: $baseline; 
+    padding: ($baseline-em * 1.5) ($baseline-em * 2);
+}

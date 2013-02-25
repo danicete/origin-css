@@ -1,0 +1,55 @@
+// * ------------------------------------------------------------
+// * BASE | Typography
+// *
+// * Default typography settings
+// * ------------------------------------------------------------
+
+
+// -------------------------------------
+// Base
+// -------------------------------------
+
+    body {
+        color: $color;
+        font: #{$font-size}/#{$baseline} "source-sans-pro-1", "source-sans-pro-2", "freight-sans-pro-1", "freight-sans-pro-2", helvetica, arial, sans-serif;
+    }
+
+// -------------------------------------
+// Links
+// -------------------------------------
+
+    a,
+    a:visited,
+    a:active { color: $link-color; font-weight: 600; }
+
+// -------------------------------------
+// Headers
+// -------------------------------------
+
+    h1, h2, h3, h4, h5, h6 { 
+        color: $header-color;
+        font-weight: 600;
+        line-height: 1;
+        margin: 0;
+    }
+
+    h1 { font-size: 2.074em; margin-bottom: #{((48 - 33.178)/33.178)}em; } // 33.178px
+    h2 { font-size: 1.728em; margin-bottom: #{((48 - 27.648)/27.648)}em; } // 27.648px
+    h3 { font-size: 1.44em; margin-bottom: #{((24 - 23.04 + 24)/23.04)}em; } // 23.04px
+    h4 { font-size: 1.2em; margin-bottom: #{((24 - 19.2 + 24)/19.2)}em; } // 19.2px
+    h5 { font-size: 1em; line-height: 1.5; margin-bottom: 1.5em; } // 16px
+    h6 { font-size: 0.833em; margin-bottom: #{((24 - 13.333)/13.333)}em; } // 13.333px
+
+// -------------------------------------
+// Box Type
+// -------------------------------------
+
+    p { margin: 0 0 1.5em; }
+
+    ul { margin: 0; padding: 0; }
+
+// -------------------------------------
+// Inline
+// -------------------------------------
+
+    img { max-width: 100%; vertical-align: middle; }

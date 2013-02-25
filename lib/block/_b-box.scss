@@ -1,0 +1,84 @@
+// * ------------------------------------------------------------
+// * BLOCK | Box
+// *
+// * The standard, go-to module for containers.
+// * ------------------------------------------------------------
+
+
+// -------------------------------------
+// Base
+// -------------------------------------
+
+%b-box_base {
+    @extend %u-clearfix;
+
+    margin-bottom: $box-model-margin;
+    padding: $box-model-padding;
+
+    &:last-child { margin-bottom: 0; } // If it is the only/last child of the container, remove the bottom margin to prevent unneeded white space -JB (1/19/13)
+    > :last-child { margin-bottom: 0; } // Remove bottom margin if it is the last/only child -JB (2/15/13)
+}
+
+// -------------------------------------
+// Primary
+// -------------------------------------
+
+%b-box_box1 {
+    @extend %b-box_base;
+}
+
+// -------------------------------------
+// Secondary
+// -------------------------------------
+
+%b-box_box2 {
+    @extend %b-box_base;
+}
+
+// -------------------------------------
+// Tertiary
+// -------------------------------------
+
+%b-box_box3 {
+    @extend %b-box_base;
+}
+
+// -------------------------------------
+// Header
+// -------------------------------------
+
+%b-box_header {
+    @extend %b-box_base;
+}
+
+// -------------------------------------
+// Sidebar
+// -------------------------------------
+
+%b-box_sidebar {
+    @extend %b-box_base;
+
+    float: left;
+    margin-right: 30px; // Need to set this to a grid variable -JB (2/15/13)
+    width: 312px; // Same as above -JB (2/15/13)
+}
+
+// -------------------------------------
+// Sidebar - Inverse
+// -------------------------------------
+
+%b-box_sidebar-inverse {
+    @extend %b-box_base;
+
+    float: right;
+    margin-left: 30px; // Same as above -JB (2/15/13)
+    width: 312px; // Same as above -JB (2/15/13)
+}
+
+// -------------------------------------
+// Footer
+// -------------------------------------
+
+%b-box_footer {
+    @extend %b-box_base;
+}

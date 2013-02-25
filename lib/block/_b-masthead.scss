@@ -1,0 +1,84 @@
+// * ------------------------------------------------------------
+// * BLOCK | Mastead
+// *
+// * Typically the main header of the project.
+// * ------------------------------------------------------------
+
+
+// -------------------------------------
+// Base
+// -------------------------------------
+
+    %b-masthead_base {
+        @extend %u-clearfix;
+
+        margin-bottom: $box-model-margin;
+        padding: $box-model-padding 0;
+    }
+
+// -------------------------------------
+// Standard
+// -------------------------------------
+
+    %b-masthead_standard {
+        @extend %b-masthead_base; 
+
+        // Logo
+
+        .b-masthead-logo { float: left; }
+
+        // Navigation
+        //   NOTE - 33 is a static test value and represents logo height, needs to be
+        //          refactored into a variable. -JB (2/8/13)
+
+        .b-masthead-nav { margin-top: (33 - $baseline-px) / 2; overflow: hidden; }  // Prevent navigation from wrapping around the logo & vertically align navigation with logo -JB (1/20/13)
+    }
+
+// -------------------------------------
+// Inverse
+// -------------------------------------
+
+    %b-masthead_inverse {
+        @extend %b-masthead_base; 
+
+        // Logo
+
+        .b-masthead-logo { float: right; }
+
+        // Navigation
+
+        .b-masthead-nav { margin-top: (33 - $baseline-px) / 2; overflow: hidden; }  // Prevent navigation from wrapping around the logo -JB (1/20/13)
+    }
+
+// -------------------------------------
+// Layered
+// -------------------------------------
+
+    %b-masthead_layered {
+        @extend %b-masthead_base;
+
+        // Logo & Navigation
+
+        .b-masthead-logo { display: block; }
+    }
+
+// -------------------------------------
+// Hero
+// -------------------------------------
+
+    %b-masthead_hero {
+        @extend %b-masthead_base;
+
+        background: url("http://placekitten.com/2000/1000") no-repeat center center;
+        height: $baseline-em * 12;
+        position: relative;
+
+        // Navigation
+
+        .b-masthead-nav {
+            margin-left: -49%;
+            position: absolute;
+            bottom: $baseline-em / 2; left: 50%;
+            width: 98%;
+        }
+    }

@@ -1,0 +1,62 @@
+// * ------------------------------------------------------------
+// * BLOCK | Drop Down
+// *
+// * Basic drop down interface
+// * ------------------------------------------------------------
+
+
+// -------------------------------------
+// Base
+// -------------------------------------
+
+%b-dropdown_base {
+    cursor: default; // Default pointer if not in an anchor tag -JB (12/14/12)
+    position: relative; // Set menu's position relative to parent -JB (12/23/12)
+    
+    // -----------------------
+    // Menu
+    // -----------------------
+
+    .menu { margin: 0; position: absolute; left: -99999px; }
+    &:hover .menu { top: 100%; }
+}
+
+// -------------------------------------
+// Align Left
+// -------------------------------------
+
+%b-dropdown_left {
+    @extend %b-dropdown_base;
+    
+    // -----------------------
+    // Menu
+    // -----------------------
+
+    &:hover .menu { left: 0; }
+}
+
+// -------------------------------------
+// Align Right
+// -------------------------------------
+
+%b-dropdown_right {
+    @extend %b-dropdown_base;
+    
+    // -----------------------
+    // Menu
+    // -----------------------
+
+    &:hover .menu { left: auto; right: 0; }
+}
+
+// -------------------------------------
+// CONSTRUCTOR
+// -------------------------------------
+
+// Left
+
+.b-dropdown_left { @extend %b-dropdown_left; }
+
+// Right
+
+.b-dropdown_right { @extend %b-dropdown_right; }
