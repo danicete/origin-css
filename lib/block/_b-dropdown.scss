@@ -17,8 +17,8 @@
     // Menu
     // -----------------------
 
-    .menu { margin: 0; position: absolute; left: -99999px; }
-    &:hover .menu { top: 100%; }
+    .b-dropdown-menu { margin: 0; position: absolute; left: -99999px; }
+    &:hover .b-dropdown-menu { top: 100%; white-space: nowrap; }
 }
 
 // -------------------------------------
@@ -32,7 +32,7 @@
     // Menu
     // -----------------------
 
-    &:hover .menu { left: 0; }
+    &:hover .b-dropdown-menu { left: 0; }
 }
 
 // -------------------------------------
@@ -46,17 +46,5 @@
     // Menu
     // -----------------------
 
-    &:hover .menu { left: auto; right: 0; }
+    &:hover .b-dropdown-menu { left: auto; right: 0; }
 }
-
-// -------------------------------------
-// CONSTRUCTOR
-// -------------------------------------
-
-// Left
-
-.b-dropdown_left { @extend %b-dropdown_left; }
-
-// Right
-
-.b-dropdown_right { @extend %b-dropdown_right; }

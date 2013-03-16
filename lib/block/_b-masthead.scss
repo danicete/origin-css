@@ -12,8 +12,8 @@
     %b-masthead_base {
         @extend %u-clearfix;
 
-        margin-bottom: $box-model-margin;
-        padding: $box-model-padding 0;
+        margin-bottom: $box-model_margin;
+        padding: $box-model_margin 0;
     }
 
 // -------------------------------------
@@ -31,7 +31,8 @@
         //   NOTE - 33 is a static test value and represents logo height, needs to be
         //          refactored into a variable. -JB (2/8/13)
 
-        .b-masthead-nav { margin-top: (33 - $baseline-px) / 2; overflow: hidden; }  // Prevent navigation from wrapping around the logo & vertically align navigation with logo -JB (1/20/13)
+        // [Can't haver overflow due to dropdown -JB (03/13/13)] .b-masthead-nav { margin-top: (33 - $baseline-px) / 2; overflow: hidden; }  // Prevent navigation from wrapping around the logo -JB (1/20/13)
+        .b-masthead-nav { margin-top: (33 - $baseline-px) / 2; }  // Prevent navigation from wrapping around the logo & vertically align navigation with logo -JB (1/20/13)
     }
 
 // -------------------------------------
@@ -47,7 +48,8 @@
 
         // Navigation
 
-        .b-masthead-nav { margin-top: (33 - $baseline-px) / 2; overflow: hidden; }  // Prevent navigation from wrapping around the logo -JB (1/20/13)
+        // [Can't haver overflow due to dropdown -JB (03/13/13)] .b-masthead-nav { margin-top: (33 - $baseline-px) / 2; overflow: hidden; }  // Prevent navigation from wrapping around the logo -JB (1/20/13)
+        .b-masthead-nav { margin-top: (33 - $baseline-px) / 2; }  // Prevent navigation from wrapping around the logo -JB (1/20/13)
     }
 
 // -------------------------------------

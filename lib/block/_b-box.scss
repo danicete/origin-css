@@ -12,8 +12,8 @@
 %b-box_base {
     @extend %u-clearfix;
 
-    margin-bottom: $box-model-margin;
-    padding: $box-model-padding;
+    margin-bottom: $box-model_margin;
+    padding: $box-model_margin;
 
     &:last-child { margin-bottom: 0; } // If it is the only/last child of the container, remove the bottom margin to prevent unneeded white space -JB (1/19/13)
     > :last-child { margin-bottom: 0; } // Remove bottom margin if it is the last/only child -JB (2/15/13)

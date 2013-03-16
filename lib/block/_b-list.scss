@@ -13,7 +13,7 @@
         @extend %u-clearfix;
 
         list-style: none;
-        margin-bottom: $box-model-margin;
+        margin-bottom: $box-model_margin;
         padding: 0;
     }
 
@@ -27,7 +27,7 @@
         // Item
 
         .b-list-item { float: left; }
-        .b-list-item + .b-list-item { margin-left: $box-model-spacing; }
+        .b-list-item + .b-list-item { margin-left: $box-model_spacing; }
     }
 
 // -------------------------------------
@@ -42,7 +42,7 @@
         // Item
 
         .b-list-item { display: inline-block; }
-        .b-list-item + .b-list-item { margin-left: $box-model-spacing; }
+        .b-list-item + .b-list-item { margin-left: $box-model_spacing; }
     }
 
 // -------------------------------------
@@ -57,7 +57,7 @@
         // Item
 
         .b-list-item { display: inline-block; }
-        .b-list-item + .b-list-item { margin-left: $box-model-spacing; }
+        .b-list-item + .b-list-item { margin-left: $box-model_spacing; }
     }
 
 // -------------------------------------

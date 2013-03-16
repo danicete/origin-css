@@ -1,59 +1,50 @@
+// ## Import Stack
+//    1. Theme vars
+//    2. Base styles
+//    3. Utilities
+//    4. Block components
+
 // -------------------------------------
 // Theme
 // -------------------------------------
 
-@import "lib/theme/aspire/vars-aspire";
+    @import "lib/theme/aspire/vars-aspire";
 
 // -------------------------------------
 // Base
 // -------------------------------------
 
-@import "lib/base/normalize";
-@import "lib/base/typography";
+    @import "lib/base/normalize";
+    @import "lib/base/typography";
 
-// ** Need to do -JB (1/29/13)
+    // ** Need to do -JB (1/29/13)
 
-// Typography
-// Helpers
-// Mixins
-// Grid
-// Forms
-// Tables
-
-// -------------------------------------
-// Block
-// -------------------------------------
-
-@import "lib/block/b-box";
-@import "lib/block/b-button";
-@import "lib/block/b-dropdown";
-@import "lib/block/b-grid";
-@import "lib/block/b-list";
-@import "lib/block/b-masthead";
-@import "lib/block/b-media";
+    // Typography
+    // Helpers
+    // Mixins
+    // Grid
+    // Forms
+    // Tables
 
 // -------------------------------------
 // Utility
 // -------------------------------------
 
-@import "lib/utility/u-clearfix";
+    @import "lib/utility/u-clearfix";
+
+// -------------------------------------
+// Block
+// -------------------------------------
+
+    @import "lib/block/b-box";
+    @import "lib/block/b-button";
+    @import "lib/block/b-dropdown";
+    @import "lib/block/b-grid";
+    @import "lib/block/b-list";
+    @import "lib/block/b-masthead";
+    @import "lib/block/b-media";
 
 
-// Debugging
+// Just, ya know, debuggin'
 
 * { margin: 0; }
-
-// b-temp for debuggin
-
-.b-temp {
-    @extend %u-clearfix;
-
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    text-align: right;
-
-    .b-temp-item {
-        display: inline-block;
-    }
-}

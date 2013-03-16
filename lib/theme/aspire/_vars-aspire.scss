@@ -9,41 +9,47 @@
 // Colors
 // -------------------------------------
 
-$canvas-color    : #fff !default;
-$primary-color   : #fff !default;
-$secondary-color : #fff !default;
-$tertiary-color  : #777 !default;
+    $canvas-color    : #fff !default;
+    $primary-color   : #fff !default;
+    $secondary-color : #fff !default;
+    $tertiary-color  : #777 !default;
 
 // -------------------------------------
 // Typography
 // -------------------------------------
 
-$font-size   : 16px !default;
-$baseline    : 1.5 !default;
-$baseline-em : ($baseline * 1em) !default;
-$baseline-px : ($font-size * $baseline) !default;
+    // Size
 
-$color           : #525252 !default;
-$color-secondary : #111 !default;
-$color-tertiary  : #fff !default;
+    $font-size   : 16px !default;
 
-$header-color : #222 !default;
+    // Baseline
 
-$link-color: #111 !default;
+    $baseline    : 1.5 !default;
+    $baseline-em : ($baseline * 1em) !default;
+    $baseline-px : ($font-size * $baseline) !default;
 
-// -------------------------------------
-// Buttons
-// -------------------------------------
+    // Color
 
-$button-bg-color  : $tertiary-color !default;
-$button-color     : $color-tertiary !default;
-$button-font-size : $font-size !default;
+    $color           : #525252 !default;
+    $color-secondary : #111 !default;
+    $color-tertiary  : #fff !default;
+
+    // Links
+
+    $link-color: #111 !default;
+
+    // Header
+
+    $header-color : #222 !default;
 
 // -------------------------------------
 // Box Model // ** TESTING
+// 
+// ## Only layout specific variables,
+//    global scope.
 // -------------------------------------
 
-$box-model-margin  : $baseline-em !default;
-$box-model-padding : $baseline-em !default;
-$box-model-spacing : .5em !default;
+    $box-model_margin  : $baseline-em !default;
+    $box-model_padding : $baseline-em !default;
+    $box-model_spacing : .5em !default;
 
