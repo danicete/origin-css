@@ -18,7 +18,7 @@
 // Typography
 // -------------------------------------
 
-    // Base Setting
+    // Baseline
 
     $font-size   : 16px !default;
 
@@ -26,19 +26,17 @@
     $baseline-em : ($baseline * 1em) !default;
     $baseline-px : ($font-size * $baseline) !default;
 
-    // Color
+    // Colors
 
     $color           : #525252 !default;
     $color-secondary : #111 !default;
     $color-tertiary  : #fff !default;
 
-    // Links
-
     $link-color: #111 !default;
 
-    // Header
-
     $header-color : #222 !default;
+
+    // Sizes
 
     // ## Surely a more elegant way to do this, not the math specifically, but how the mixin is
     // ## essentially manual input, current version just serves as a placeholder for my OCD

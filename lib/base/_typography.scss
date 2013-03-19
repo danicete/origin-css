@@ -34,11 +34,11 @@
     }
 
     h1 { @include set-header($header_h1); }
-    h2 { @include set-header($header_h2); } // 27.648px
-    h3 { @include set-header($header_h3); } // 23.04px
-    h4 { @include set-header($header_h4); } // 19.2px
-    h5 { @include set-header($header_h5); line-height: 1.5; } // 16px
-    h6 { @include set-header($header_h6); } // 13.333px
+    h2 { @include set-header($header_h2); }
+    h3 { @include set-header($header_h3); }
+    h4 { @include set-header($header_h4); }
+    h5 { @include set-header($header_h5); line-height: 1.5; }
+    h6 { @include set-header($header_h6); }
 
 // -------------------------------------
 // Box Type
