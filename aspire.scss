@@ -8,7 +8,14 @@
 // Theme
 // -------------------------------------
 
-    @import "lib/theme/aspire/t-aspire";
+    @import "theme/aspire/t-aspire";
+
+// -------------------------------------
+// Utility
+// -------------------------------------
+
+    @import "lib/utility/u-clearfix";
+    @import "lib/utility/u-typography";
 
 // -------------------------------------
 // Base
@@ -25,12 +32,6 @@
     // Grid
     // Forms
     // Tables
-
-// -------------------------------------
-// Utility
-// -------------------------------------
-
-    @import "lib/utility/u-clearfix";
 
 // -------------------------------------
 // Block

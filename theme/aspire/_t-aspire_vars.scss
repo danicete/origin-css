@@ -9,7 +9,7 @@
 // Colors
 // -------------------------------------
 
-    $canvas-color    : #fff !default;
+    $canvas-color    : #fff !default; // Site's background color
     $primary-color   : #fff !default;
     $secondary-color : #fff !default;
     $tertiary-color  : #777 !default;
@@ -18,11 +18,9 @@
 // Typography
 // -------------------------------------
 
-    // Size
+    // Base Setting
 
     $font-size   : 16px !default;
-
-    // Baseline
 
     $baseline    : 1.5 !default;
     $baseline-em : ($baseline * 1em) !default;
@@ -41,6 +39,17 @@
     // Header
 
     $header-color : #222 !default;
+
+    // ## Surely a more elegant way to do this, not the math specifically, but how the mixin is
+    // ## essentially manual input, current version just serves as a placeholder for my OCD
+    // ## when it comes to setting values for type -JB (3/18/13)
+
+    $header_h1 : (2.074em) (#{((48 - 33.178)/33.178)}em); // 33.178px
+    $header_h2 : (1.728em) (#{((48 - 27.648)/27.648)}em); // 27.648px
+    $header_h3 : (1.44em)  (#{((24 - 23.04 + 24)/23.04)}em); // 23.04px
+    $header_h4 : (1.2em)   (#{((24 - 19.2 + 24)/19.2)}em); // 19.2px
+    $header_h5 : (1em)     (1.5em); // 16px
+    $header_h6 : (0.833em) (#{((24 - 13.333)/13.333)}em); // 13.333px
 
 // -------------------------------------
 // Box Model // ** TESTING
