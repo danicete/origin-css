@@ -1,51 +1,57 @@
 // ## Import Stack
-//    1. Theme vars
-//    2. Base styles
-//    3. Utilities
-//    4. Block components
+//
+// ## 1. Helpers  - Make all helpers available to all assets
+// ## 2. Vendor   - Load in 3rd party libraries & plugins & make them available
+// ## 3. Theme    - Load in default theme
+// ## 4. Layouts  - Load preset layouts
+// ## 5. Partilas - Make all partials available for instancing
+// ## 6. Assets   - Load custom assets
 
 // -------------------------------------
-// Theme
+// Helpers
 // -------------------------------------
 
-    @import "theme/aspire/t-aspire";
+    @import "aspire/helpers/h-tools";
 
 // -------------------------------------
-// Utility
+// Vendor
 // -------------------------------------
 
-    @import "lib/utility/u-clearfix";
-    @import "lib/utility/u-typography";
+    @import "vendor/css/normalize";
 
 // -------------------------------------
-// Base
+// Themes
 // -------------------------------------
 
-    @import "lib/base/normalize";
-    @import "lib/base/typography";
+    @import "themes/aspire/t-aspire";
 
-    // ** Need to do -JB (1/29/13)
-
-    // Typography
-    // Helpers
-    // Mixins
-    // Grid
-    // Forms
-    // Tables
+    // ## DEV NOTE: Cascading relationships start at this point...
 
 // -------------------------------------
-// Block
+// Layouts
 // -------------------------------------
 
-    @import "lib/block/b-box";
-    @import "lib/block/b-button";
-    @import "lib/block/b-dropdown";
-    @import "lib/block/b-grid";
-    @import "lib/block/b-image";
-    @import "lib/block/b-list";
-    @import "lib/block/b-masthead";
-    @import "lib/block/b-media";
+    // Load layouts...
 
+// -------------------------------------
+// Partials
+// -------------------------------------
+
+    @import "aspire/partials/p-box";
+    @import "aspire/partials/p-button";
+    @import "aspire/partials/p-dropdown";
+    @import "aspire/partials/p-grid";
+    @import "aspire/partials/p-image";
+    @import "aspire/partials/p-list";
+    @import "aspire/partials/p-masthead";
+    @import "aspire/partials/p-media";
+    @import "aspire/partials/p-typography";
+
+// -------------------------------------
+// Assets
+// -------------------------------------
+
+    // Load assets...
 
 // Just, ya know, debuggin'
 

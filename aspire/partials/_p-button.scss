@@ -9,9 +9,9 @@
 // Variables
 // -------------------------------------
 
-$button-bg-color  : $tertiary-color !default;
-$button-color     : $color-tertiary !default;
-$button-font-size : $font-size !default;
+    $button-bg-color  : #444 !default;
+    $button-color     : #eee !default;
+    $button-font-size : 1rem !default;
 
 // -------------------------------------
 // Base
@@ -48,8 +48,8 @@ $button-font-size : $font-size !default;
     @extend %b-button_base;
 
     font-size: $button-font-size;
-    line-height: $baseline; 
-    padding: ($baseline-em / 2) $baseline-em;
+    line-height: 1.5; 
+    padding: .75rem 1.5rem;
 }
 
 // -------------------------------------
@@ -60,9 +60,9 @@ $button-font-size : $font-size !default;
     @extend %b-button_base;
 
     font-size: $button-font-size * .75;
-    line-height: $baseline;
-    margin: ($baseline-em / 4) 0;
-    padding: ($baseline-em / 2);
+    line-height: 1.5;
+    margin: .375rem 0;
+    padding: .75rem;
 }
 
 // -------------------------------------
@@ -73,6 +73,6 @@ $button-font-size : $font-size !default;
     @extend %b-button_base;
 
     font-size: $button-font-size * 2;
-    line-height: $baseline; 
-    padding: ($baseline-em * 1.5) ($baseline-em * 2);
+    line-height: 1.5; 
+    padding: 3rem 4.5rem;
 }

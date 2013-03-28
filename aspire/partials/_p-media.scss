@@ -13,7 +13,7 @@
     @extend %u-clearfix;
 
     clear: both;
-    margin-bottom: $baseline-em;
+    margin-bottom: 1.5rem;
 
     // -----------------------
     // Content
@@ -61,5 +61,5 @@
     // Media
     // -----------------------
 
-    .b-media-asset { display: block; margin-bottom: $baseline-em; }
+    .b-media-asset { display: block; margin-bottom: 1.5rem; }
 }
