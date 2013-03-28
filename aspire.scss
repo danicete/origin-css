@@ -4,7 +4,7 @@
 // ## 2. Vendor   - Load in 3rd party libraries & plugins & make them available
 // ## 3. Theme    - Load in default theme
 // ## 4. Layouts  - Load preset layouts
-// ## 5. Partilas - Make all partials available for instancing
+// ## 5. Partials - Make all partials available for instancing
 // ## 6. Assets   - Load custom assets
 
 // -------------------------------------
@@ -53,6 +53,8 @@
 
     // Load assets...
 
-// Just, ya know, debuggin'
+// -------------------------------------
+// Debugging
+// -------------------------------------
 
-* { margin: 0; }
+    * { margin: 0; }
