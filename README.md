@@ -1,14 +1,14 @@
 # Origin CSS
 
-Origin's primary objective is not to be another component library—there are many great options already available—but instead it is a holistic framework that serves as the structural foundation for your CSS. It aims to keep CSS portion of a front-end framework as abstracted and decoupled as possible for the ease of management and scalability.
+Origin's primary objective is not to be another component library—there are many great options already available—but instead it is a holistic framework that serves as the structural foundation for your CSS. It aims to keep the CSS portion of a front-end framework as abstracted and decoupled as possible for easier management and greater scalability.
 
-- [Overview](#overview)
-- [Installation](#installation)
-- [Getting Started](#getting-started)
-- [Digging Deeper](#digging-deeper)
-- [Demos](#demos)
+1. [Overview](#overview)
+2. [Installation](#installation)
+3. [Getting Started](#getting-started)
+4. [Digging Deeper](#digging-deeper)
+5. [Demos](#demos)
 
-## <a name="overview"></a>Overview
+## 1. <a name="overview"></a>Overview
 
 ### Project Structuring
 
@@ -56,14 +56,18 @@ Origin using a naming convention that utilize dashes, camel case, and underscore
 
 *Up next...*
 
-## <a name="getting-started"></a>Getting Started
+## 2. <a name="installation"></a>Installation
 
 *In queue...*
 
-## <a name="digging-deeper"></a>Digging Deeper
+## 3. <a name="getting-started"></a>Getting Started
 
 *In queue...*
 
-## <a name="demos"></a>Demos
+## 4. <a name="digging-deeper"></a>Digging Deeper
+
+*In queue...*
+
+## 5. <a name="demos"></a>Demos
 
 *In queue...*
