@@ -11,7 +11,7 @@
 // Helpers
 // -------------------------------------
 
-    @import "aspire/helpers/h-tools";
+    @import "origin-css/helpers/h-tools";
 
 // -------------------------------------
 // Vendor
@@ -23,7 +23,7 @@
 // Themes
 // -------------------------------------
 
-    @import "themes/aspire/t-aspire";
+    @import "themes/origin-css/t-aspire";
 
     // ## DEV NOTE: Cascading relationships start at this point...
 
@@ -37,15 +37,15 @@
 // Partials
 // -------------------------------------
 
-    @import "aspire/partials/p-box";
-    @import "aspire/partials/p-button";
-    @import "aspire/partials/p-dropdown";
-    @import "aspire/partials/p-grid";
-    @import "aspire/partials/p-image";
-    @import "aspire/partials/p-list";
-    @import "aspire/partials/p-masthead";
-    @import "aspire/partials/p-media";
-    @import "aspire/partials/p-typography";
+    @import "origin-css/partials/p-box";
+    @import "origin-css/partials/p-button";
+    @import "origin-css/partials/p-dropdown";
+    @import "origin-css/partials/p-grid";
+    @import "origin-css/partials/p-image";
+    @import "origin-css/partials/p-list";
+    @import "origin-css/partials/p-masthead";
+    @import "origin-css/partials/p-media";
+    @import "origin-css/partials/p-typography";
 
 // -------------------------------------
 // Assets
