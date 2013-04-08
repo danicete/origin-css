@@ -1,27 +1,24 @@
 // * ------------------------------------------------------------
-// * THEME | Aspire | CORE
+// * THEME | Origin
 // *
-// * Aspire theme core file
+// * Origin default theme
 // * ------------------------------------------------------------
 
-
-// -------------------------------------
-// Colors
-// -------------------------------------
-
-    $canvas-color    : #fff !default; // Site's background color
-    $primary-color   : #fff !default;
-    $secondary-color : #fff !default;
-    $tertiary-color  : #777 !default;
-
-// -------------------------------------
-// Partials
-// -------------------------------------
-
-    @import "partials/p-typography";
 
 // -------------------------------------
 // Layouts
 // -------------------------------------
 
     // @import Layouts here... if any
+
+// -------------------------------------
+// Partials
+// -------------------------------------
+
+    // @import Partials here... if any
+
+// -------------------------------------
+// Assets
+// -------------------------------------
+
+    @import "assets/css/a-typography";
