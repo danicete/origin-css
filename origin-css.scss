@@ -17,13 +17,13 @@
 // Vendor
 // -------------------------------------
 
-    @import "vendor/css/normalize";
+    @import "vendor/assets/normalize";
 
 // -------------------------------------
 // Themes
 // -------------------------------------
 
-    @import "themes/origin-css/t-aspire";
+    // @import "themes/origin-css/t-aspire";
 
     // ## DEV NOTE: Cascading relationships start at this point...
 
@@ -45,7 +45,6 @@
     @import "origin-css/partials/p-list";
     @import "origin-css/partials/p-masthead";
     @import "origin-css/partials/p-media";
-    @import "origin-css/partials/p-typography";
 
 // -------------------------------------
 // Assets
