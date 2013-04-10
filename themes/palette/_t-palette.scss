@@ -8,19 +8,15 @@
 // -------------------------------------
 // Assets
 // -------------------------------------
-    
-    @import "assets/css/a-presentation";
-    @import "assets/css/a-structure";
-    @import "assets/css/a-typography";
+
+    @import "assets/css/a-palette";
 
 // -------------------------------------
 // Partials
 // -------------------------------------
 
-    // @import Partials here... if any
+    @import "partials/_p-box";
 
 // -------------------------------------
 // Layouts
 // -------------------------------------
-
-    @import "layouts/_l-site";

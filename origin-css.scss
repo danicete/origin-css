@@ -1,59 +1,34 @@
 // ## Import Stack
 //
-// ## 1. Helpers  - Make all helpers available to all assets
-// ## 2. Vendor   - Load in 3rd party libraries & plugins & make them available
-// ## 3. Theme    - Load in default theme
-// ## 4. Layouts  - Load preset layouts
-// ## 5. Partials - Make all partials available for instancing
-// ## 6. Assets   - Load custom assets
+// ## 1. Helpers   - Make all helpers globally available
+// ## 2. Vendor    - Load in 3rd party assets & plugins
+// ## 3. Assets    - Load custom assets & images
+// ## 4. Partials  - Make all partials available for extending
+// ## 5. Layouts   - Load layouts for views and templates
+// ## 6. Debugging - Debugging area
 
 // -------------------------------------
-// Helpers
+// 1. Helpers
 // -------------------------------------
 
     @import "origin-css/helpers/h-tools";
 
 // -------------------------------------
-// Vendor
+// 2. Vendor
 // -------------------------------------
 
     @import "vendor/assets/css/normalize";
 
 // -------------------------------------
-// Themes
-// -------------------------------------
-
-    // @import "themes/origin-css/t-aspire";
-
-    // ## DEV NOTE: Cascading relationships start at this point...
-
-// -------------------------------------
-// Assets
+// 3. Assets
 // -------------------------------------
 
     @import "origin-css/assets/css/a-responsive";
 
 // -------------------------------------
-// Layouts
-// -------------------------------------
-
-    @import "origin-css/layouts/l-site";
-
-// -------------------------------------
-// Partials
-// -------------------------------------
-
-    @import "origin-css/partials/p-box";
-    @import "origin-css/partials/p-button";
-    @import "origin-css/partials/p-dropdown";
-    @import "origin-css/partials/p-grid";
-    @import "origin-css/partials/p-image";
-    @import "origin-css/partials/p-list";
-    @import "origin-css/partials/p-masthead";
-    @import "origin-css/partials/p-media";
-
-// -------------------------------------
-// Debugging
+// 6. Debugging
+//
+// ## Remember to remove before deploying!
 // -------------------------------------
 
     * { margin: 0; }

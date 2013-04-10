@@ -6,78 +6,111 @@
 
 
 // -------------------------------------
+// Theming | Presentation
+// -------------------------------------
+    
+    // Backgrounds
+
+    $box_bgColor : $component_bgColor !default;
+    $box_bgImage : $component_bgImage !default;
+
+    // Borders
+
+    $box_borderSize   : $component_borderSize !default;
+    $box_borderStyle  : $component_borderStyle !default;
+    $box_borderColor  : $component_borderColor !default;
+    $box_borderRadius : $component_borderRadius !default;
+
+    // Headers
+
+    $box_headerColor : $component_headerColor !default;
+
+    // Links
+
+    $box_linkColor : $component_linkColor !default;
+
+    // Text
+
+    $box_color : $component_color !default;
+
+// -------------------------------------
+// Theming | Structure
+// -------------------------------------
+
+    $box_margin  : $component-margin !default;
+    $box_padding : $component-padding !default;
+
+// -------------------------------------
 // Base
+//
+// ## Foundational styles
 // -------------------------------------
 
-%b-box_base {
-    @extend %u-clearfix;
+    %b-box_base {
+        @extend %u-clearfix;
 
-    margin-bottom: 1.5rem;
+        background: $box_bgColor $box_bgImage;
+        border: $box_borderSize $box_borderStyle $box_borderColor;
+        border-radius: $box_borderRadius;
+        color: $box_color;
 
-    &:last-child { margin-bottom: 0; } // If it is the only/last child of the container, remove the bottom margin to prevent unneeded white space -JB (1/19/13)
-    > :last-child { margin-bottom: 0; } // Remove bottom margin if it is the last/only child -JB (2/15/13)
-}
+        margin-bottom: $box_margin;
+        padding: $box_padding;
 
-// -------------------------------------
-// Primary
-// -------------------------------------
+        > :last-child { margin-bottom: 0; } // Remove bottom margin if child is the last/only child -JB (2/15/13)
+    
+        h1, h2, h3, h4, h5, h6 {
+            color: $box_headerColor;
+        }
 
-%b-box_box1 {
-    @extend %b-box_base;
-}
-
-// -------------------------------------
-// Secondary
-// -------------------------------------
-
-%b-box_box2 {
-    @extend %b-box_base;
-}
-
-// -------------------------------------
-// Tertiary
-// -------------------------------------
-
-%b-box_box3 {
-    @extend %b-box_base;
-}
+        a {
+            color: $box_linkColor;
+        }
+    }
 
 // -------------------------------------
 // Header
+//
+// ## Heading container, not to be used
+// ## as a <h> replacement
 // -------------------------------------
 
-%b-box_header {
-    @extend %b-box_base;
-}
+    @mixin b-box_header {
+        @extend %b-box_base;
+    }
 
 // -------------------------------------
 // Sidebar
+//
+// ## Auxillary container, defaults to
+// ## the left
 // -------------------------------------
 
-%b-box_sidebar {
-    @extend %b-box_base;
+    @mixin b-box_sidebar {
+        @extend %b-box_base;
 
-    float: left;
-    margin-right: 30px; // Need to set this to a grid variable -JB (2/15/13)
-    width: 312px; // Same as above -JB (2/15/13)
-}
+        float: left;
+    }
 
 // -------------------------------------
 // Sidebar - Inverse
+//
+// ## Auxillary container, default to
+// ## the right
 // -------------------------------------
 
-%b-box_sidebar-inverse {
-    @extend %b-box_base;
+    @mixin b-box_sidebar-inverse {
+        @extend %b-box_base;
 
-    float: right;
-    margin-left: 30px; // Same as above -JB (2/15/13)
-    width: 312px; // Same as above -JB (2/15/13)
-}
+        float: right;
+    }
 
 // -------------------------------------
 // Footer
+//
+// ## Footer container
 // -------------------------------------
 
-%b-box_footer {
-    @extend %b-box_base;
-}
+    @mixin b-box_footer {
+        @extend %b-box_base;
+    }

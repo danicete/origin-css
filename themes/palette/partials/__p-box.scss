@@ -1,26 +1,30 @@
 // * ------------------------------------------------------------
-// * THEME | Origin
-// *
-// * Origin default theme
+// * THEME | PARTIAL | p-box
 // * ------------------------------------------------------------
 
 
 // -------------------------------------
-// Assets
-// -------------------------------------
-    
-    @import "assets/css/a-presentation";
-    @import "assets/css/a-structure";
-    @import "assets/css/a-typography";
-
-// -------------------------------------
-// Partials
+// Base
 // -------------------------------------
 
-    // @import Partials here... if any
+    .b-box_base {
+        background: $primary_color;
+        color: $font_color-primary;
+    }
 
 // -------------------------------------
-// Layouts
+// Sidebar
 // -------------------------------------
 
-    @import "layouts/_l-site";
+    .b-box_sidebar {
+        background: $secondary_color;
+        color: $font_color-secondary;
+    }
+
+// -------------------------------------
+// Sidebar - Inverse
+// -------------------------------------
+
+    .b-box_sidebar-inverse {
+        @extend .b-box_sidebar !optional;
+    }

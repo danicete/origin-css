@@ -1,0 +1,34 @@
+// * ------------------------------------------------------------
+// * THEME | ASSET | Structure
+// *
+// * Global structure values
+// * ------------------------------------------------------------
+
+
+// -------------------------------------
+// Global Structure
+// -------------------------------------
+
+    $structure-margin  : null !default;
+    $structure-padding : .75rem !default;
+    $structure-spacing : null !default;
+
+// -------------------------------------
+// Components
+//
+// ## Containers
+// -------------------------------------
+
+    $component-margin  : $structure-margin !default;
+    $component-padding : $structure-padding !default;
+    $component-spacing : $structure-spacing !default;
+
+// -------------------------------------
+// Elements
+//
+// ## Children of containers
+// -------------------------------------
+
+    $element-margin  : $structure-margin !default;
+    $element-padding : $structure-padding !default;
+    $element-spacing : $structure-spacing !default;

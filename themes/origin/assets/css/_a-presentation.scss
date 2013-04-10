@@ -1,0 +1,122 @@
+// * ------------------------------------------------------------
+// * THEME | ASSET | Palette
+// *
+// * Global palette settings
+// * ------------------------------------------------------------
+
+
+// -------------------------------------
+// Mixins
+// -------------------------------------
+
+    // Mixins go here...
+
+// -------------------------------------
+// Global Palette
+// -------------------------------------
+
+    $canvas_color     : null !default; // Describe color...
+    $primary_color    : #eee !default; // Describe color...
+    $secondary_color  : #111 !default; // Describe color...
+    $tertiary_color   : null !default; // Describe color...
+    $quaternary_color : null !default; // Describe color...
+
+// -------------------------------------
+// Typography
+// -------------------------------------
+
+    // Base
+
+    $font_color            : null !default;
+    $font_color-primary    : #111 !default;
+    $font_color-secondary  : #eee !default;
+    $font_color-tertiary   : null !default;
+    $font_color-quaternary : null !default;
+
+    // Links
+
+    $link_color            : null !default;
+    $link_color-primary    : null !default;
+    $link_color-secondary  : null !default;
+    $link_color-tertiary   : null !default;
+    $link_color-quaternary : null !default;
+
+    // Headers
+
+    $header_color            : null !default;
+    $header_color-primary    : null !default;
+    $header_color-secondary  : #fff !default;
+    $header_color-tertiary   : null !default;
+    $header_color-quaternary : null !default;
+
+// -------------------------------------
+// Components
+//
+// ## Containers
+// -------------------------------------
+
+    // Background
+
+    $component_bgColor     : $secondary_color !default;
+    $component_bgColor-alt : null !default;
+
+    $component_bgImage     : null !default;
+    $component_bgImage-alt : null !default;
+
+    // Text
+
+    $component_color     : $font_color-secondary !default;
+    $component_color-alt : null !default;
+
+    // Links
+
+    $component_linkColor     : null !default;
+    $component_linkColor-alt : null !default;
+
+    // Borders
+
+    $component_borderSize  : null !default;
+    $component_borderStyle : null !default;
+    $component_borderColor : null !default;
+
+    $component_borderRadius : null !default;
+
+    // Headers
+
+    $component_headerColor : $header_color-secondary !default;
+
+// -------------------------------------
+// Elements
+//
+// ## Children of containers
+// -------------------------------------
+
+    // Background
+
+    $element_bgColor     : null !default;
+    $element_bgColor-alt : null !default;
+
+    $element_bgImage     : null !default;
+    $element_bgImage-alt : null !default;
+
+    // Text
+
+    $element_color     : null !default;
+    $element_color-alt : null !default;
+
+    // Links
+
+    $element_linkColor     : null !default;
+    $element_linkColor-alt : null !default;
+
+    // Borders
+
+    $element_borderSize  : null !default;
+    $element_borderStyle : null !default;
+    $element_borderColor : null !default;
+
+    $element_borderRadius : null !default;
+
+    // Headers
+
+    $element_headerColor : null !default;
