@@ -6,6 +6,14 @@
 /*    - Original comments changed to silent comments (10/21/12)
 */
 
+// ### For debugging purposes ###
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
 // ==========================================================================
 // HTML5 display definitions
 // ==========================================================================

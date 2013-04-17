@@ -1,5 +1,5 @@
 // * ------------------------------------------------------------
-// * THEME | ASSET | Structure
+// * THEME > webApp | ASSET | Structure
 // *
 // * Global structure values
 // * ------------------------------------------------------------
@@ -10,7 +10,7 @@
 // -------------------------------------
 
     $structure-margin  : null !default;
-    $structure-padding : .75rem !default;
+    $structure-padding : null !default;
     $structure-spacing : null !default;
 
 // -------------------------------------
@@ -19,8 +19,8 @@
 // ## Containers
 // -------------------------------------
 
-    $component-margin  : $structure-margin !default;
-    $component-padding : $structure-padding !default;
+    $component-margin  : 0 0 1.5rem !default;
+    $component-padding : .75em !default;
     $component-spacing : $structure-spacing !default;
 
 // -------------------------------------

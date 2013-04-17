@@ -1,0 +1,50 @@
+// * ------------------------------------------------------------
+// * THEME > webApp | LAYOUT | Standard
+// * ------------------------------------------------------------
+
+
+// ## Grid is only for development purposes;
+// ## not final product -JB (4/17/13)
+
+// -------------------------------------
+// Primary
+// -------------------------------------
+
+    .l-standard_primary {
+        @extend %l-standard_col-inverse;
+
+        padding: .75rem;
+        width: percentage(7/12); // ** DEV **
+    }
+
+// -------------------------------------
+// Secondary
+// -------------------------------------
+
+    .l-standard_secondary {
+        @extend %l-standard_col-inverse;
+
+        width: percentage(3/12); // ** DEV **
+    }
+
+// -------------------------------------
+// Tertiary
+// -------------------------------------
+
+    .l-standard_tertiary {
+        @extend %l-standard_col-inverse;
+
+        width: percentage(2/12); // ** DEV **
+    }
+
+// -------------------------------------
+// Header
+// -------------------------------------
+
+    .l-standard_header {
+        @extend %l-standard_row;
+
+        background: #888; // ** DEV **
+        height: 3rem; // ** DEV **
+        margin-bottom: 1.5rem; // ** DEV **
+    }

@@ -1,0 +1,55 @@
+// * ------------------------------------------------------------
+// * LAYOUT | Standard
+// *
+// * Standard layout that comprises of generic row and column regions.
+// * ------------------------------------------------------------
+
+
+// -------------------------------------
+// Theming | Presentation
+// -------------------------------------
+    
+    // Backgrounds
+
+    $t-layout_bgColor : null !default;
+    $t-layout_bgImage : null !default;
+
+    // Borders
+
+    $t-layout_borderSize   : null !default;
+    $t-layout_borderStyle  : null !default;
+    $t-layout_borderColor  : null !default;
+    $t-layout_borderRadius : null !default;
+
+// -------------------------------------
+// Theming | Structure
+// -------------------------------------
+
+    $t-layout_margin  : null !default;
+    $t-layout_padding : null !default;
+
+// -------------------------------------
+// Column
+// -------------------------------------
+
+    %l-standard_col {
+        float: left;
+    }
+
+// -------------------------------------
+// Column | Inverse
+// -------------------------------------
+
+    %l-standard_col-inverse {
+        float: right;
+    }
+
+// -------------------------------------
+// Row
+// -------------------------------------
+
+    %l-standard_row {
+        clear: both;
+        display: block;
+    }
+

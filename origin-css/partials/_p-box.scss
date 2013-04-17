@@ -1,5 +1,5 @@
 // * ------------------------------------------------------------
-// * BLOCK | Box
+// * PARTIALS | p-box
 // *
 // * The standard, go-to module for a generic container. Does not
 // * serve a semantic role.
@@ -55,7 +55,7 @@
         border-radius: $p-box_borderRadius;
         color: $p-box_color;
 
-        margin-bottom: $p-box_margin;
+        margin: $p-box_margin;
         padding: $p-box_padding;
 
         > :last-child { margin-bottom: 0; } // Remove bottom margin if child is the last/only child -JB (2/15/13)
@@ -67,4 +67,18 @@
         a {
             color: $p-box_linkColor;
         }
+    }
+
+// -------------------------------------
+// Stack
+//
+// ## Stacked containers
+// -------------------------------------
+
+    %p-box_stack {
+        @extend %p-box_base;
+
+        margin: 0;
+
+        & + & { border-top-width: 0; }
     }

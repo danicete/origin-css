@@ -1,5 +1,5 @@
 // * ------------------------------------------------------------
-// * THEME | Origin
+// * THEME > webApp
 // *
 // * Origin default theme
 // * ------------------------------------------------------------
@@ -11,16 +11,15 @@
     
     @import "assets/css/a-presentation";
     @import "assets/css/a-structure";
-    @import "assets/css/a-typography";
 
 // -------------------------------------
 // Partials
 // -------------------------------------
 
-    // @import Partials here... if any
+    @import "partials/_p-box";
 
 // -------------------------------------
 // Layouts
 // -------------------------------------
 
-    @import "layouts/_l-site";
+    @import "layouts/_l-standard";
