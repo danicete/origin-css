@@ -1,7 +1,8 @@
 // * ------------------------------------------------------------
 // * BLOCK | Box
 // *
-// * The standard, go-to module for containers.
+// * The standard, go-to module for a generic container. Does not
+// * serve a semantic role.
 // * ------------------------------------------------------------
 
 
@@ -11,34 +12,34 @@
     
     // Backgrounds
 
-    $box_bgColor : $component_bgColor !default;
-    $box_bgImage : $component_bgImage !default;
+    $p-box_bgColor : $component_bgColor !default;
+    $p-box_bgImage : $component_bgImage !default;
 
     // Borders
 
-    $box_borderSize   : $component_borderSize !default;
-    $box_borderStyle  : $component_borderStyle !default;
-    $box_borderColor  : $component_borderColor !default;
-    $box_borderRadius : $component_borderRadius !default;
+    $p-box_borderSize   : $component_borderSize !default;
+    $p-box_borderStyle  : $component_borderStyle !default;
+    $p-box_borderColor  : $component_borderColor !default;
+    $p-box_borderRadius : $component_borderRadius !default;
 
     // Headers
 
-    $box_headerColor : $component_headerColor !default;
+    $p-box_headerColor : $component_headerColor !default;
 
     // Links
 
-    $box_linkColor : $component_linkColor !default;
+    $p-box_linkColor : $component_linkColor !default;
 
     // Text
 
-    $box_color : $component_color !default;
+    $p-box_color : $component_color !default;
 
 // -------------------------------------
 // Theming | Structure
 // -------------------------------------
 
-    $box_margin  : $component-margin !default;
-    $box_padding : $component-padding !default;
+    $p-box_margin  : $component-margin !default;
+    $p-box_padding : $component-padding !default;
 
 // -------------------------------------
 // Base
@@ -46,71 +47,24 @@
 // ## Foundational styles
 // -------------------------------------
 
-    %b-box_base {
+    %p-box_base {
         @extend %u-clearfix;
 
-        background: $box_bgColor $box_bgImage;
-        border: $box_borderSize $box_borderStyle $box_borderColor;
-        border-radius: $box_borderRadius;
-        color: $box_color;
+        background: $p-box_bgColor $p-box_bgImage;
+        border: $p-box_borderSize $p-box_borderStyle $p-box_borderColor;
+        border-radius: $p-box_borderRadius;
+        color: $p-box_color;
 
-        margin-bottom: $box_margin;
-        padding: $box_padding;
+        margin-bottom: $p-box_margin;
+        padding: $p-box_padding;
 
         > :last-child { margin-bottom: 0; } // Remove bottom margin if child is the last/only child -JB (2/15/13)
     
         h1, h2, h3, h4, h5, h6 {
-            color: $box_headerColor;
+            color: $p-box_headerColor;
         }
 
         a {
-            color: $box_linkColor;
+            color: $p-box_linkColor;
         }
-    }
-
-// -------------------------------------
-// Header
-//
-// ## Heading container, not to be used
-// ## as a <h> replacement
-// -------------------------------------
-
-    @mixin b-box_header {
-        @extend %b-box_base;
-    }
-
-// -------------------------------------
-// Sidebar
-//
-// ## Auxillary container, defaults to
-// ## the left
-// -------------------------------------
-
-    @mixin b-box_sidebar {
-        @extend %b-box_base;
-
-        float: left;
-    }
-
-// -------------------------------------
-// Sidebar - Inverse
-//
-// ## Auxillary container, default to
-// ## the right
-// -------------------------------------
-
-    @mixin b-box_sidebar-inverse {
-        @extend %b-box_base;
-
-        float: right;
-    }
-
-// -------------------------------------
-// Footer
-//
-// ## Footer container
-// -------------------------------------
-
-    @mixin b-box_footer {
-        @extend %b-box_base;
     }
