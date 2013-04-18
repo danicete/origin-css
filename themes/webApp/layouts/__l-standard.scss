@@ -14,7 +14,7 @@
         @extend %l-standard_col-inverse;
 
         padding: .75rem;
-        width: percentage(7/12); // ** DEV **
+        width: percentage(10/16); // ** DEV **
     }
 
 // -------------------------------------
@@ -24,7 +24,7 @@
     .l-standard_secondary {
         @extend %l-standard_col-inverse;
 
-        width: percentage(3/12); // ** DEV **
+        width: percentage(4/16); // ** DEV **
     }
 
 // -------------------------------------
@@ -34,7 +34,8 @@
     .l-standard_tertiary {
         @extend %l-standard_col-inverse;
 
-        width: percentage(2/12); // ** DEV **
+        padding: .75rem;
+        width: percentage(2/16); // ** DEV **
     }
 
 // -------------------------------------
@@ -44,7 +45,8 @@
     .l-standard_header {
         @extend %l-standard_row;
 
-        background: #888; // ** DEV **
+        background: #ccc; // ** DEV **
+        border-bottom: $component-borderSize $component-borderStyle $component-borderColor; // ** DEV **
+        
         height: 3rem; // ** DEV **
-        margin-bottom: 1.5rem; // ** DEV **
     }

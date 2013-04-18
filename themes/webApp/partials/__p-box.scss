@@ -17,4 +17,6 @@
 
     .p-box_stack {
         @extend %p-box_stack;
+
+        border-top-width: 0;
     }

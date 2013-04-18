@@ -28,11 +28,12 @@
 
     // Links
 
-    $p-box_linkColor : $component_linkColor !default;
+    $p-box_linkColor      : $component_linkColor !default;
+    $p-box_linkDecoration : $link_decoration !default;
 
     // Text
 
-    $p-box_color : $component_color !default;
+    $p-box_color   : $component_color !default;
 
 // -------------------------------------
 // Theming | Structure
@@ -55,6 +56,7 @@
         border-radius: $p-box_borderRadius;
         color: $p-box_color;
 
+        display: block;
         margin: $p-box_margin;
         padding: $p-box_padding;
 
@@ -66,6 +68,11 @@
 
         a {
             color: $p-box_linkColor;
+            text-decoration: $p-box_linkDecoration;
+        }
+
+        @if ($p-box_linkDecoration == null or $p-box_linkDecoration != "none") {
+            & { text-decoration: none; } // If applied to link for block linking (Not sold on this idea) -JB (4/17/13)
         }
     }
 

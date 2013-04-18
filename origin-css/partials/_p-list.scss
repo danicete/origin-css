@@ -1,5 +1,5 @@
 // * ------------------------------------------------------------
-// * BLOCK | List
+// * PARTIAL | p-list
 // *
 // * List variations
 // * ------------------------------------------------------------
@@ -13,6 +13,7 @@
         @extend %u-clearfix;
 
         list-style: none;
+
         margin-bottom: 1.5rem;
         padding: 0;
     }
@@ -61,9 +62,14 @@
     }
 
 // -------------------------------------
-// Plain
+// Bullet
 // -------------------------------------
 
-    %b-list_plain {
-        @extend %b-list_base;
+    %p-list_bullet {
+        list-style: outside disc;
+
+        margin: $component-margin;
+        padding-left: 1.5rem;
+
+        & & { margin: 0; }
     }
