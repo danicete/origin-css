@@ -13,20 +13,34 @@
     @import "assets/css/a-structure";
 
 // -------------------------------------
-// Initialize Origin CSS
+// Build Origin CSS
 // -------------------------------------
 
-    @import "../../../../origin-css/origin-init";
+    // Import Framework
+
+    @import "../../origin-css";
+
+    // Trigger Partials
+
+    $init_p-box  : true;
+    $init_p-list : true;
+
+    // Trigger Layouts
+
+    // ...
+
+    // Initialize Framework
+
+    @import "../../origin-css/origin-init";
 
 // -------------------------------------
-// Partials
+// Extended Partials
 // -------------------------------------
 
     @import "partials/_p-box";
-    @import "partials/_p-list";
 
 // -------------------------------------
-// Layouts
+// Extended Layouts
 // -------------------------------------
 
     @import "layouts/_l-standard";

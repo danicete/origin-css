@@ -1,0 +1,26 @@
+// * ------------------------------------------------------------
+// * Initialize Origin CSS
+// *
+// * Loads partials & layouts with defined values.
+// * ------------------------------------------------------------
+
+
+// -------------------------------------
+// 1. Partials
+// -------------------------------------
+
+    @import "partials/p-box";
+    @import "partials/p-button";
+    @import "partials/p-dropdown";
+    @import "partials/p-grid";
+    @import "partials/p-image";
+    @import "partials/p-list";
+    @import "partials/p-masthead";
+    @import "partials/p-media";
+
+// -------------------------------------
+// 2. Layouts
+// -------------------------------------
+
+    @import "layouts/l-site";
+    @import "layouts/l-standard";
