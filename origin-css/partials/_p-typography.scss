@@ -5,19 +5,6 @@
 // * ------------------------------------------------------------
 
 
-// -------------------------------------
-// Mixins
-// -------------------------------------
-
-    // Headers
-    // ## See notes in Aspire theme about creating something
-    // ## better for this mixin -JB (3/18/13)
-
-    @mixin set-header($header-values) {
-        font-size: nth($header-values, 1);
-        margin-bottom: nth($header-values, 2);
-    }
-
 $init_p-typography : null !default;
 
 @if ($init_p-typography) {
