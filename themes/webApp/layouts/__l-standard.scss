@@ -7,12 +7,23 @@
 // ## not final product -JB (4/17/13)
 
 // -------------------------------------
+// Default
+// -------------------------------------
+
+    .l-standard {
+        position: fixed;
+        top: 0; right: 0; bottom: 0; left: 0;
+    }
+
+// -------------------------------------
 // Primary
 // -------------------------------------
 
     .l-standard_primary {
         @extend %l-standard_col-inverse;
 
+        height: 100%;
+        overflow: scroll;
         padding: .75rem;
         width: percentage(10/16); // ** DEV **
     }
@@ -24,6 +35,8 @@
     .l-standard_secondary {
         @extend %l-standard_col-inverse;
 
+        height: 100%;
+        overflow: scroll;
         width: percentage(4/16); // ** DEV **
     }
 
@@ -34,6 +47,8 @@
     .l-standard_tertiary {
         @extend %l-standard_col-inverse;
 
+        height: 100%;
+        overflow: scroll;
         padding: .75rem;
         width: percentage(2/16); // ** DEV **
     }

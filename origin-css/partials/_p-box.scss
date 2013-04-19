@@ -99,9 +99,21 @@ $init_p-box : null !default;
     .p-box_stack {
         @extend %p-box_base;
 
+        border-radius: 0; // Turn off border radius for inner containers -JB (4/18/13)
+
         margin: 0;
 
-        & + & { border-top-width: 0; }
+        &:first-of-type {
+            border-radius: $p-box_borderRadius $p-box_borderRadius 0 0;
+        }
+
+        &:last-of-type {
+            border-radius: 0 0 $p-box_borderRadius $p-box_borderRadius;
+        }
+
+        & + & {
+            border-top-width: 0;
+        }
     }
 
 } // End controller
