@@ -15,7 +15,7 @@
 // Global Palette
 // -------------------------------------
 
-    $canvas_color     : #fff !default; // Describe color...
+    $canvas_color     : null !default; // Describe color...
     $primary_color    : null !default; // Describe color...
     $secondary_color  : null !default; // Describe color...
     $tertiary_color   : null !default; // Describe color...
@@ -58,7 +58,7 @@
 
     // Background
 
-    $component_bgColor     : $secondary_color !default;
+    $component_bgColor     : null !default;
     $component_bgColor-alt : null !default;
 
     $component_bgImage     : null !default;
@@ -66,7 +66,7 @@
 
     // Text
 
-    $component_color     : $font_color-secondary !default;
+    $component_color     : null !default;
     $component_color-alt : null !default;
 
     // Links
@@ -76,15 +76,15 @@
 
     // Borders
 
-    $component_borderSize  : 1px !default;
-    $component_borderStyle : solid !default;
-    $component_borderColor : #888 !default;
+    $component_borderSize  : null !default;
+    $component_borderStyle : null !default;
+    $component_borderColor : null !default;
 
     $component_borderRadius : null !default;
 
     // Headers
 
-    $component_headerColor : $header_color-secondary !default;
+    $component_headerColor : null !default;
 
 // -------------------------------------
 // Elements
@@ -112,9 +112,9 @@
 
     // Borders
 
-    $element_borderSize  : 1px !default;
-    $element_borderStyle : solid !default;
-    $element_borderColor : rgba(0,0,0,.2) !default;
+    $element_borderSize  : null !default;
+    $element_borderStyle : null !default;
+    $element_borderColor : null !default;
 
     $element_borderRadius : null !default;
 

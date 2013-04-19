@@ -5,6 +5,12 @@
 // * ------------------------------------------------------------
 
 
+// Temporary holding area for helper & vendor
+
+    @import "helpers/h-tools";
+
+    @import "vendor/assets/css/normalize";
+
 // -------------------------------------
 // 1. Partials
 // -------------------------------------
@@ -17,6 +23,7 @@
     @import "partials/p-list";
     @import "partials/p-masthead";
     @import "partials/p-media";
+    @import "partials/p-typography";
 
 // -------------------------------------
 // 2. Layouts
