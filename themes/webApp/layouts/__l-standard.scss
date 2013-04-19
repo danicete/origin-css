@@ -11,8 +11,8 @@
 // -------------------------------------
 
     .l-standard {
-        position: fixed;
-        top: 0; right: 0; bottom: 0; left: 0;
+        position: absolute;
+        top: 3rem; right: 0; bottom: 0; left: 0;
     }
 
 // -------------------------------------
@@ -64,4 +64,7 @@
         border-bottom: $component-borderSize $component-borderStyle $component-borderColor; // ** DEV **
         
         height: 3rem; // ** DEV **
+        position: fixed;
+        top: 0; left: 0;
+        width: 100%;
     }
