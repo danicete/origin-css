@@ -62,7 +62,8 @@
 
         background: #ccc; // ** DEV **
         border-bottom: $component-borderSize $component-borderStyle $component-borderColor; // ** DEV **
-        
+        line-height: 3rem; // *** DEV ***
+
         height: 3rem; // ** DEV **
         position: fixed;
         top: 0; left: 0;

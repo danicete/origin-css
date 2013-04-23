@@ -1,19 +1,27 @@
 // * ------------------------------------------------------------
 // * THEME > webApp
 // *
-// * Origin default theme
+// * Example theme that creates an entity for a fictional
+// * web application.
 // * ------------------------------------------------------------
 
 
+// ## Import Stack
+//
+// ## 1. Assets
+// ## 2. Origin CSS
+// ## 3. Extended Partials
+// ## 4. Extended Layouts
+
 // -------------------------------------
-// Assets
+// 1. Assets
 // -------------------------------------
     
     @import "assets/css/a-presentation";
     @import "assets/css/a-structure";
 
 // -------------------------------------
-// Build Origin CSS
+// 2. Origin CSS
 // -------------------------------------
 
     // Trigger Partials
@@ -30,13 +38,13 @@
     @import "../../origin-css/origin-init";
 
 // -------------------------------------
-// Extended Partials
+// 3. Extended Partials
 // -------------------------------------
 
     @import "partials/_p-box";
 
 // -------------------------------------
-// Extended Layouts
+// 4. Extended Layouts
 // -------------------------------------
 
     @import "layouts/_l-standard";

@@ -59,6 +59,9 @@ $init_p-box : null !default;
         border: $p-box_borderSize $p-box_borderStyle $p-box_borderColor;
         border-radius: $p-box_borderRadius;
         color: $p-box_color;
+        @if ($p-box_linkDecoration == null or $p-box_linkDecoration != "none") {
+            text-decoration: none; // If applied to link for block linking (Not sold on this idea) -JB (4/17/13)
+        }
 
         display: block;
         margin: $p-box_margin;
@@ -73,10 +76,6 @@ $init_p-box : null !default;
         a {
             color: $p-box_linkColor;
             text-decoration: $p-box_linkDecoration;
-        }
-
-        @if ($p-box_linkDecoration == null or $p-box_linkDecoration != "none") {
-            & { text-decoration: none; } // If applied to link for block linking (Not sold on this idea) -JB (4/17/13)
         }
     }
 
